@@ -1,0 +1,79 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "subject": 1,
+    "title": "Python Basics",
+    "slug": "python-basics",
+    "overview": "Learn the ropes of python programming.",
+    "created": "2021-05-08T02:19:46.983Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "subject": 1,
+    "title": "Python Testing",
+    "slug": "python-testing",
+    "overview": "Learn how to use unittest and doctests.",
+    "created": "2021-05-08T02:21:19.573Z"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Python Lists",
+    "description": "Learn about Python lists."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Python Functions",
+    "description": "Learn how to use functions in Python."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "title": "Python Dictionaries",
+    "description": "Learn how to use Python dictionaries."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 4,
+  "fields": {
+    "course": 2,
+    "title": "Unittest",
+    "description": "Learn how to use unittest."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 5,
+  "fields": {
+    "course": 2,
+    "title": "Doctests",
+    "description": "Learn how to use doctests."
+  }
+}
+]
