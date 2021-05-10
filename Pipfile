@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 pillow = "*"
+django-braces = "==1.14.0"
 
 [dev-packages]
 
