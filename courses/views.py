@@ -1,6 +1,8 @@
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 
 from django.apps import apps
+# from django.contrib.auth import authenticate, login
+# from django.contrib.auth.forms import UserCreationForm  
 from django.contrib.auth.mixins import LoginRequiredMixin, \
                                        PermissionRequiredMixin
 from django.db.models import Count
@@ -218,3 +220,5 @@ class CourseListView(TemplateResponseMixin, View):
 class CourseDetailView(DetailView):
     model = Course
     template_name = 'courses/course/detail.html'
+
+
