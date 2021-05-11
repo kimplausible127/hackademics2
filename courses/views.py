@@ -16,6 +16,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from .forms import ModuleFormSet
 from .models import Content, Course, Module, Subject
+from students.forms import CourseEnrollForm
 
 
 class OwnerMixin(object):
@@ -221,4 +222,8 @@ class CourseDetailView(DetailView):
     model = Course
     template_name = 'courses/course/detail.html'
 
-
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['enroll_form'] = CourseEnrollForm(
+            initial={'course':self.object})
+        return context
