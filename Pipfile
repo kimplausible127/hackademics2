@@ -8,6 +8,8 @@ django = "*"
 pillow = "*"
 django-braces = "==1.14.0"
 django-embed-video = "==1.3.2"
+django-memcache-status = "==2.2"
+python-memcached = "*"
 
 [dev-packages]
 
